@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/desconectar_dispositivo_bluetooth"
+        android:orderInCategory="100"
+        android:title="Desc. Dispositivo"
+        support:showAsAction="never" />
+
+</menu>

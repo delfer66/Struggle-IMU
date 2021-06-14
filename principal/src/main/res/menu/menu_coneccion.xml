@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_controles"
+        android:icon="@drawable/ic_action_gamepad"
+        android:title="Control"
+        support:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/menu_wifi"
+        android:icon="@drawable/ic_action_wifi_on"
+        android:title="Rival"
+        support:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/menu_bluetooth"
+        android:icon="@drawable/ic_action_bluetooth_on"
+        android:title="Robot"
+        support:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/menu_pausar_musica"
+        android:orderInCategory="100"
+        android:title="Play/Pause"
+        support:showAsAction="never" />
+    <item
+        android:id="@+id/menu_cambiar_musica"
+        android:orderInCategory="100"
+        android:title="Next Song"
+        support:showAsAction="never" />
+    <item
+        android:id="@+id/menu_creditos"
+        android:orderInCategory="100"
+        android:title="Creditos"
+        support:showAsAction="never" />
+    <item
+        android:id="@+id/menu_configurar_wifi"
+        android:orderInCategory="100"
+        android:title="Config. Wi-Fi"
+        support:showAsAction="never" />
+
+</menu>

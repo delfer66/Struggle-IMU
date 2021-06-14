@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name_menu">Control</string>
+    <string name="app_name">ControlV1.0</string>
+    <string name="finding_service">Buscando Servidor Local</string>
+    <string name="btn_send">Enviar</string>
+    <string name="txt_hint">Escriba un Mensage</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="enable_p2p_button">P2P On/Off</string>
+    <string name="discover_peers_button">Descubrir</string>
+    <string name="indicaciones_wifi">ATENCION:
+        Iniciar Conección Wi-FI en otro dispositivo</string>
+
+    <string name="string_controles_hold">Nota: Se envia varios datos mientras se pulsa</string>
+    <string name="string_controles_vacia">Nota: El dato se envia al dejar de pulsar</string>
+    <string name="string_controles_hold_const">Nota: Se satura el envio de datos mientras se pulsa</string>
+
+
+    <string name="skyworld">Two Steps From Hell - SkyWorld</string>
+    <string name="protectors_of_the_earth">Two Steps From Hell - Protectors of the Earth</string>
+    <string name="sons_of_war">Two Steps from Hell - Sons of War</string>
+    <string name="blackheart">Two Steps From Hell - Blackheart</string>
+    <string name="bloodandsteel">Blood and Steel</string>
+    <string name="strength_of_a_thousand_men">Two Steps From Hell - Strength Of A Thousand Men</string>
+    <string name="imperitum">Immediate Music - Imperitum</string>
+    <string name="mortalgladiator">Focus Music- Mortal Gladiator</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="wifi">Wi-Fi Estado</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="mensaje_wifi">Nota: Es posible que tarde un poco.</string>
+    <string name="nota_controles_hold">Si se activa se enviara al robot constantemente el boton pulsado</string>
+    <string name="start_text_small">Start Battle</string>
+    <string name="start_text"> Start \nBattle</string>
+    <string name="reiniciar_text">Reiniciar\nBattle</string>
+    <string name="cancel_text">Cancelar\n Battle</string>
+    <string name="reiniciar_text_small">Reiniciar Battle</string>
+    <string name="reiniciar_confirmacion_text">Enviar ?\n Reiniciar</string>
+    <string name="reiniciar_enviado_text">Enviado\n Reiniciar</string>
+    <string name="txt_comando">Escriba un Comando</string>
+
+
+    <string name="start_text_ayuda">
+    Pulse Start Battle para iniciar el juego, tu oponente tambien lo debe pulsar</string>
+    <string name="rendirme_ayuda">
+    Pulsa de nuevo Rendirme esto reiniciara la barra de vida pero obtendras una derrota.</string>
+    <string name="reiniciar_ayuda">
+    Reiniciar Para Comenzar desde Cero (Victorias y Derrotas se reinician),
+        tu oponente tambien debe estar de acuerdo.</string>
+    <string name="cancelar_ayuda">
+    Pulsa Cancelar para no iniciar la batalla.</string>
+
+    <string name="ayuda_conectar_rival">
+    Bienvenido!!!\n
+        -Para comenzar a jugar primero Pulsa Wi-Fi para buscar a tu rival (tu rival tambien
+        debe pulsar wifi).\n
+        -Una vez que tu rival se muestre en pantalla espera asta que tu tambien estes en la pantalla de tu rival\n
+        -Selecciona o pulsa sobre el nombre de tu rival. (Rival: Acepta la Comunicacion).\n
+        -Eso es todo!!!\n
+        -Pasa a menu Robot si no lo has hecho antes.\n
+        -Pasa a menú Control para iniciar la pelea.
+    </string>
+
+    <string name="ayuda_conectar_robot">
+    Bienvenido!!!\n
+        -Para comenzar a jugar primero Pulsa Bluetooth\n
+        -Enciende el bluetooth para conectarte con tu robot\n
+        -Entre los dispositivos selecciona un robot\n
+        -Eso es todo!!!\n
+        -Pasa a menú Rival si no lo has hecho antes.\n
+        -Pasa a menú Control para iniciar la pelea.
+    </string>
+
+</resources>

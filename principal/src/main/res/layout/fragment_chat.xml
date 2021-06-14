@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1effffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desconectar"
+            android:id="@+id/button_desconectar_wifi"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dip"
+        android:transcriptMode="alwaysScroll"
+        android:layout_marginTop="50dp">
+
+        <!-- Preview: listitem=@android:layout/simple_list_item_1 -->
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="bottom"
+        android:background="#32ffffff">
+
+        <EditText
+            android:id="@+id/txtChatLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.90"
+            android:focusableInTouchMode="true"
+            android:hint="@string/txt_hint"
+            android:visibility="visible"
+            android:textColor="#ffffff"
+            android:textSize="15dp">
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_weight="0.10"
+            android:text="@string/btn_send" />
+    </LinearLayout>
+
+</FrameLayout>

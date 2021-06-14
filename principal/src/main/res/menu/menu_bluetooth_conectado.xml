@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_controles"
+        android:icon="@drawable/ic_action_gamepad"
+        android:title="Controles"
+        support:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/menu_buscar_wifi"
+        android:icon="@drawable/ic_action_wifi_off"
+        android:title="Wifi"
+        support:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/desconectar_dispositivo_bluetooth"
+        android:icon="@drawable/ic_action_bluetooth_on"
+        android:title="Desconectar"
+        support:showAsAction="ifRoom|withText" />
+    <!--
+    <item
+        android:id="@+id/atn_direct_enable"
+        android:icon="@drawable/ic_action_on_off"
+        android:title="@string/enable_p2p_button"
+        support:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/atn_direct_discover"
+        android:icon="@drawable/ic_action_discover"
+        android:title="@string/discover_peers_button"
+        support:showAsAction="ifRoom|withText" />
+-->
+    <item
+        android:id="@+id/menu_configurar_wifi"
+        android:orderInCategory="100"
+        android:title="Config. Wi-Fi"
+        support:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_apagar_bluetooth"
+        android:orderInCategory="100"
+        android:title="OFF Bluetooth"
+        support:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_Ayuda"
+        android:orderInCategory="100"
+        android:title="Ayuda"
+        support:showAsAction="never" />
+
+
+</menu>

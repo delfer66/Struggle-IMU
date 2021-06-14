@@ -1,0 +1,484 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.espe.controlbluetoothv1.Controles"
+    android:orientation="horizontal"
+    android:background="#23000000">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#d40b0b"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="158dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="14dp"
+                    android:id="@+id/linear_barra_vida"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView2"
+                    android:background="@drawable/barra_vida" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Vida"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="100dp"
+                    style="@style/texto_blanco" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_width="788dp"
+                android:layout_height="512dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/up"
+                    android:layout_gravity="center_horizontal|top"
+                    android:background="@drawable/up_r" />
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/down"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@drawable/down_r" />
+
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/der"
+                    android:layout_gravity="right|bottom"
+                    android:background="@drawable/der_r" />
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/izq"
+                    android:layout_gravity="left|bottom"
+                    android:background="@drawable/izq_r" />
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/ataque_derecho"
+                    android:layout_gravity="left|top"
+                    android:background="@drawable/button_red_bajo" />
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/ataque_izquierdo"
+                    android:layout_gravity="right|top"
+                    android:background="@drawable/button_red_bajo" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Pulse una tecla"
+                android:id="@+id/txt_boton_pulsado"
+                android:layout_gravity="left|bottom"
+                style="@style/texto_blanco_rojo" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_controles"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:id="@+id/linear_you_win"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView9"
+                    android:background="@drawable/redroundedbutton"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    style="@style/texto_blanco_blanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="You Win!!!"
+                    android:id="@+id/textView17"
+                    android:layout_gravity="center"
+                    android:textSize="25dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:id="@+id/linear_you_lose"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView8"
+                    android:background="@drawable/redroundedbutton"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="You Lose!!!"
+                    android:layout_gravity="center"
+                    style="@style/texto_blanco_blanco"
+                    android:textSize="25dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/start_text_ayuda"
+            android:id="@+id/txt_nota_controles"
+            style="@style/texto_blanco_rojo"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:background="@drawable/shieldcomplex"
+                android:layout_gravity="center"
+                android:id="@+id/start_battle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_text"
+                android:id="@+id/text_estado_battle"
+                android:layout_gravity="center"
+                android:enabled="false"
+                style="@style/texto_blanco_blanco"
+                android:singleLine="false"
+                android:textSize="30dp"
+                android:textIsSelectable="false" />
+        </FrameLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hold"
+                android:id="@+id/mantener_envio_bluetooth"
+                style="@style/texto_blanco"
+                android:allowUndo="false"
+                android:layout_marginRight="20dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hold Constante"
+                android:id="@+id/mantener_envio_bluetooth_const"
+                android:checked="false"
+                style="@style/texto_blanco"
+                android:visibility="gone" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Estado Pelea: "
+                        android:id="@+id/textView16"
+                        style="@style/texto_blanco_rojo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="DESCONECTADO"
+                        android:id="@+id/text_info_estado"
+                        style="@style/texto_blanco_rojo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Victorias:  "
+                        style="@style/texto_blanco_rojo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:id="@+id/txt_victorias"
+                        style="@style/texto_blanco_rojo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Derrotas:  "
+                        android:id="@+id/textView21"
+                        style="@style/texto_blanco_rojo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:id="@+id/txt_derrotas"
+                        style="@style/texto_blanco_rojo"
+                        android:layout_marginLeft="1dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="50">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/image_reiniciar"
+                                android:background="@drawable/redsquarebutton"
+                                android:layout_gravity="center_horizontal" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Rendirme"
+                                android:layout_gravity="center"
+                                style="@style/texto_blanco"
+                                android:textSize="20dp" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="50"
+                            android:visibility="visible"
+                            android:id="@+id/frame_confirmacion_rendirme">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/imagen_no_rendirme"
+                                android:background="@drawable/redsquarebutton"
+                                android:layout_gravity="center_horizontal"
+                                android:visibility="visible" />
+
+                            <TextView
+                                style="@style/texto_blanco"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="No"
+                                android:layout_gravity="center"
+                                android:textSize="20dp" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear_confirmacion_rendirme">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Seguro? "
+                            android:id="@+id/textView27"
+                            style="@style/texto_blanco_rojo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/rendirme_ayuda"
+                            android:id="@+id/textView25"
+                            android:layout_gravity="center_horizontal"
+                            style="@style/texto_blanco_rojo" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear_test"
+                    android:background="#32ffffff">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_comandos"
+                        android:layout_weight="0.90"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/txt_comando" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button_probar_juego"
+                        android:text="Probar"
+                        android:layout_weight="0.10" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="300dp"
+                        android:layout_height="20dp"
+                        android:background="#d40b0b"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/linear_barra_vida_enemigo" />
+
+                    <ImageView
+                        android:layout_width="400dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imageView3"
+                        android:background="@drawable/barra_vida"
+                        android:layout_gravity="right|center_horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Enemigo Vida"
+                        android:id="@+id/textView7"
+                        android:layout_gravity="bottom|right"
+                        style="@style/texto_blanco_rojo" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

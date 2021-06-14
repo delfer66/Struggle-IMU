@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.espe.controlbluetoothv1.PanelPrincipalFragment"
+    android:orientation="horizontal"
+    android:id="@+id/contenedor">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:name="com.example.espe.controlbluetoothv1.Controles"
+                android:id="@+id/fragmentx"
+                tools:layout="@layout/fragment_controles" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="293dp"
+                android:name="com.example.espe.controlbluetoothv1.Bluetooth"
+                android:id="@+id/fragmenty"
+                tools:layout="@layout/fragment_bluetooth" />
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="com.example.espe.controlbluetoothv1.WifiFragment"
+                android:id="@+id/fragmentz"
+                tools:layout="@layout/fragment_wifi" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/controles_x">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/wifi_z">
+
+    </LinearLayout>
+
+</LinearLayout>
