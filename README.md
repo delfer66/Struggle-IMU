@@ -2,7 +2,7 @@
 # Struggle-IMU
 ===========================
 
-![Struggle-IMU](https://github.com/delfer66/Struggle-IMU/blob/master/image/header.png)
+![Struggle-IMU](https://github.com/delfer66/Struggle-IMU/blob/master/image/logo1.jpg)
 
 Struggle-IMU es el diseño e implementación de un juguete electrónico que consta de dos robots luchadores, que se comunican y controlan atravez de aplicación móvil para Android.
 
